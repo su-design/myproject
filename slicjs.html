@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 style="text-align: center;padding-top: 40;">Bouncher</h1>
+                </div>
+                <div class="col-md-6">
+                    <form class="form-group" id="item">
+                        <div class="my-3">
+                            <label for="item" class="form-label">Item: </label>
+                            <input type="text" id="iname" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="price" class="form-label total" >Price: </label>
+                            <input type="text" id="price" class="form-control" onkeyup="calculate()">
+                        </div>
+                        <div class="my-3">
+                            <label for="Qty" class="form-label total" >Quantity: </label>
+                            <input type="text" id="qty" class="form-control" onkeyup="calculate()">
+                        </div>
+                        <div class="my-3">
+                            <label for="Discount%" class="form-label total" >Discount:</label>
+                            <input type="text" id="dis" class="form-control" onkeyup="calculate()">
+                        </div>
+                        <div class="my-3">
+                            <label for="subtotal" class="form-label">Subtotal:</label>
+                            <input readonly id="sub" class="form-control">
+                        </div>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary" onclick="Add()" id="add">Add</button>
+                        </div>
+
+                    </form>
+                    <table class="table table-dark  " id="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Item Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Quantity</th>
+                                <th scope="col">Discount</th>
+                                <th scope="col">Subtotal</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tbody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/slicjs.js"></script>
+</body>
+</html>
